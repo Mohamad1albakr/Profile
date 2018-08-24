@@ -10,12 +10,6 @@ h1{ text-shadow: 5px 15px 3px gold  ;
 -moz-text-shadow: 5px 15px 3px ;
 }
     
-    
-
-   
-   
-
-
 @keyframes navi{ 
     25%{background-color:rgb(51, 255, 0)}
     50%{background-color:rgb(208, 211, 14)}
@@ -52,7 +46,7 @@ background-color: rgba(202, 104, 181, 0.699);
     animation-name: active;
     animation-duration: 5s;
     -moz-animation-iteration-count: infinite;
-    background-color: gold;
+    background-color: rgba(238, 85, 200, 0.753);
 }
 .navi>li>a{
     border:0;
