@@ -17,6 +17,32 @@
                     <li><a href="Bilder.html">Bilder</a></li>
                     <li id="de"><a href="../index.html">EN </a></li>
                </ul>
+               <img id="randomImage" src="images/1.jpg" alt="image" \>
+               <p id="par1" class="hidden"></p>
+               <p id="par2" class="hidden"></p>
+               <p id="par3" class="hidden"></p>
+               <p id="par4" class="hidden"></p>
+               <p id="par5" class="hidden"></p>
+               <p id="par6" class="hidden"></p>
+               <p id="par7" class="hidden"></p>
+               <p id="par8" class="hidden"></p>
+               <p id="par9" class="hidden"></p>
+               <p id="par10" class="hidden"></p>
+               <button onclick="guiss()">Change Image</button>
+               <script>
+           setInterval(guiss,5000);
+               function guiss(){
+                   var randomNumber=Math.floor(Math.random() * 10)+1;
+                   makeHidden();
+                   document.getElementById("randomImage").setAttribute("src","images/"+randomNumber+".jpg");
+                   document.getElementById("par"+randomNumber).setAttribute("style","display: block;");
+               }
+               function makeHidden(){
+                   for(var i=1; i<=10 ; i++){
+                       document.getElementById("par"+i).setAttribute("style","");
+                   }
+               }
+               </script> 
    
 
     <div id="content" class="container"> Willkommen auf meiner Seite<br> 
