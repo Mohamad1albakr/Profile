@@ -18,8 +18,9 @@ text-align: center;
     height:30px;
     float: left;
     display: block;
-    position: fixed;
+    position: sticky;
     z-index: 1;
+    top: 0;
     background-color: #33333341;
 }
 #randomImage{
